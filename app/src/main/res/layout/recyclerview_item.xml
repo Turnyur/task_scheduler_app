@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/recyc_lay">
+
+
+    <!-- A CardView that contains a TextView -->
+    <android.support.v7.widget.CardView
+        android:id="@+id/card_view"
+        app:cardCornerRadius="3dp"
+        android:theme="@style/MyMaterialTheme"
+        android:elevation="3dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:cardElevation="5dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp">
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="?android:attr/selectableItemBackground">
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1">
+
+                <TextView
+                    android:id="@+id/task_title"
+                    android:layout_width="match_parent"
+
+                    android:text="Task Scheduler Version 1"
+                    android:textSize="20sp"
+                    android:padding="10dp"
+                    android:layout_height="wrap_content"
+                    android:textStyle="normal|bold"
+                    android:background="@color/colorAccent"
+                    android:textColor="@color/textColorPrimary"
+                    android:elevation="7dp" />
+
+                <TextView
+                    android:text="Task Subject"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/task_subject"
+                    android:textSize="20sp"
+                    android:padding="10dp"
+                    android:gravity="left"
+                    android:textStyle="bold|italic" />
+
+                <TextView
+                    android:text="Task Body"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/task_body"
+                    android:textSize="18sp"
+                    android:gravity="left"
+                    android:paddingLeft="10dp" />
+
+                <TextView
+                    android:text="17 April 2017"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/task_date"
+                    android:textSize="17sp"
+                    android:gravity="right"
+                    android:paddingRight="20dp" />
+
+                <TextView
+                    android:text="08:45 AM"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/task_time"
+                    android:textSize="17sp"
+                    android:gravity="right"
+                    android:paddingRight="20dp" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </android.support.v7.widget.CardView>
+</LinearLayout>

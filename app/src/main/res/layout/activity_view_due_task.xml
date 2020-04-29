@@ -1,0 +1,211 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F4F4F4">
+    <include
+        android:id="@+id/toolbar"
+        layout="@layout/toolbar" />
+    <!-- A CardView that contains a TextView -->
+
+    <!-- A CardView that contains a TextView -->
+    <android.support.v7.widget.CardView
+        android:id="@+id/card_view"
+        app:cardCornerRadius="3dp"
+        android:theme="@style/MyMaterialTheme"
+        android:elevation="3dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:cardElevation="9dp">
+
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/cardview_light_background"
+            android:paddingLeft="5dp"
+            android:paddingRight="5dp">
+            <TextView
+                android:id="@+id/task_view_title"
+                android:layout_width="match_parent"
+                android:gravity="center_horizontal"
+                android:text="Task Scheduler 1.0"
+                android:textStyle="bold"
+                android:background="#00E676"
+                android:elevation="0dp"
+                android:textColor="@color/textColorPrimary"
+                android:textSize="30sp"
+                android:layout_height="40dp" />
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="#D1D1D1"/>
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:elevation="0dp"
+                android:gravity="bottom">
+
+                <TextView
+                    android:text="Subject"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/t_subject"
+                    android:layout_weight="1"
+                    android:textSize="20sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:text="None Yet"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/real_t_subject"
+                    android:layout_weight="1"
+                    android:textSize="20sp" />
+
+
+            </LinearLayout>
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="#D1D1D1"/>
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:gravity="bottom">
+
+                <TextView
+                    android:text="Today's Date"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/t_due_date"
+                    android:layout_weight="1"
+                    android:textSize="20sp"
+                    android:textStyle="bold" />
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/real_due_date"
+                    android:layout_weight="1"
+                    android:textSize="20sp" />
+            </LinearLayout>
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="#D1D1D1"/>
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:elevation="0dp"
+                android:gravity="bottom">
+
+                <TextView
+                    android:text="Current time"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/t_due_time"
+                    android:layout_weight="1"
+                    android:textSize="20sp"
+                    android:textStyle="bold" />
+
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/real_due_time"
+                    android:layout_weight="1"
+                    android:textSize="20sp" />
+            </LinearLayout>
+
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="#D1D1D1"/>
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="130dp">
+
+                <TextView
+                    android:text="Note"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:id="@+id/title_t_notes"
+                    android:textSize="20sp"
+                    android:gravity="bottom|center"
+                    android:textStyle="normal|bold" />
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="#D1D1D1"
+                    />
+                <TextView
+                    android:layout_below="@+id/task_view2"
+                    android:layout_centerInParent="true"
+                    android:layout_width="match_parent"
+                    android:layout_marginTop="10dp"
+                    android:gravity="center_horizontal"
+                    android:text="You have no Scheduled Task Yet"
+                    android:textSize="20sp"
+                    android:id="@+id/real_note_body"
+                    android:layout_height="70dp" />
+
+
+            </LinearLayout>
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="#D1D1D1"/>
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:elevation="0dp"
+                android:gravity="right"
+                android:layout_margin="4dp">
+
+                <TextView
+                    android:text="Task is due today, Please attend to Task now"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:id="@+id/textView"
+                    android:layout_weight="1"
+                    android:gravity="bottom"
+                    android:textSize="20sp"
+                    android:textStyle="bold"
+                    android:paddingLeft="19dp"
+                    android:textColor="#FF1B26" />
+
+                <android.support.design.widget.FloatingActionButton
+                    android:id="@+id/delete_task"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:clickable="true"
+                    android:src="@drawable/ic_clear_black_24dp"
+                    app:backgroundTint="#00E676"
+                    app:borderWidth="0dp"
+                    app:elevation="6dp"
+                    app:fabSize="normal"
+                    app:rippleColor="@color/colorPrimary"
+                    android:layout_gravity="right" />
+
+            </LinearLayout>
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="#D1D1D1"
+                android:layout_marginBottom="5dp" />
+        </LinearLayout>
+    </android.support.v7.widget.CardView>
+</LinearLayout>

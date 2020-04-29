@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_splash_screen"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:orientation="vertical"
+    tools:context="com.turnyur.taskscheduler.SplashScreen"
+    android:background="@drawable/bg_gradient"
+    android:weightSum="1">
+
+
+    <TextView
+        android:text="Task Scheduler"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/textView3"
+        android:textSize="35sp"
+        android:gravity="center"
+        android:layout_marginTop="50dp"
+        android:textColorLink="?attr/actionMenuTextColor"
+        android:textIsSelectable="true"
+        android:textColor="#fbfbfb"
+        android:background="#2F8080" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:id="@+id/imageView"
+        android:src="@drawable/img_task_sheduler"
+        android:scaleType="fitCenter"
+        android:layout_height="212dp" />
+
+    <TextView
+        android:text="Loading..."
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/textView2"
+        android:gravity="center" />
+
+</LinearLayout>
